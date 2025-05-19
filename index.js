@@ -31,9 +31,10 @@ const PARCELX_API_TOKEN = process.env.PARCELX_API_TOKEN;
 // Replace 'https://your-store-name.myshopify.com' and 'https://your-custom-domain.com'
 // with your actual Shopify store domains.
 const whitelist = [
-    `https://${process.env.SHOPIFY_SHOP_DOMAIN}`, // Dynamically get from Shopify if app, or hardcode
-    'https://lalitenterprise.myshopify.com',      // Example: your primary *.myshopify.com domain
-    'https://www.lalitenterprise.com'             // Example: your custom domain
+    `https://${process.env.SHOPIFY_SHOP_DOMAIN}`,
+    'https://lalitenterprise.myshopify.com',
+    'https://www.lalitenterprise.com',
+    'https://lalitenterprise.com' // Added this line
 ];
 const corsOptions = {
   origin: function (origin, callback) {
